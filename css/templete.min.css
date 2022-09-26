@@ -2832,7 +2832,7 @@ button:focus{
 
 /* Creative Slider */
 .creative-banner-one .swiper-slide{
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 /* Header */
@@ -3205,12 +3205,12 @@ button:focus{
 
 /* Bottom Aside */
 .creative-banner-one .bottom-aside {
-    height: 150px;
+    /* height: 150px;
     position: absolute;
     bottom: 0;
     right: 100px;
     z-index: 99;
-    left: 0;
+    left: 0; */
 }
 .creative-banner-one .bottom-aside .video-box {
     width: 250px;
@@ -3231,12 +3231,6 @@ button:focus{
     color: #000;
     text-align: center;
     line-height: 43px;
-}
-.creative-banner-one .slide-social {
-	position: absolute;
-    top: 50%;
-    left: 80px;
-    transform: translateY(-50%);
 }
 .creative-banner-one .slide-social ul{
 	margin-bottom: 0;
@@ -3265,12 +3259,12 @@ button:focus{
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 150px 0px 150px 80px;
+    padding: 100px 0;
     z-index: 9;
     position: relative;
 }
 .vehicle-box.style1 .left-info .title {
-	font-size: 80px;
+	font-size: 60px;
     color: #fff;
     font-family: roboto;
     text-transform: uppercase;
@@ -3279,7 +3273,7 @@ button:focus{
     margin-bottom: 0;
 }
 .vehicle-box.style1 .left-info .main-title {
-    font-size: 28px;
+    font-size: 25px;
     color: #fff;
     font-family: roboto;
     text-transform: uppercase;
