@@ -2442,6 +2442,7 @@ footer.footer-white h6 a{
 .footer-white .footer-bottom,
 .footer-white .footer-top{
 	background:#fff;
+	overflow: hidden;
 }
 .footer-white .footer-bottom{
 	border-top:1px solid rgba(0,0,0,0.1);
@@ -3115,7 +3116,7 @@ button:focus{
     right: 0;
     position: absolute;
     width: 100px;
-    height: 100vh;
+    /* height: 100vh; */
     z-index: 100000;
     display: flex;
     display: -ms-flexbox;
@@ -3176,7 +3177,7 @@ button:focus{
 }
 .creative-banner-one .swiper-button-arrow .swiper-button-prev:after, 
 .creative-banner-one .swiper-button-arrow .swiper-button-next:after {
-    font-family: poppins;
+    font-family: arial;
     text-transform: uppercase;
     color: var(--primary);
     font-weight: 600;
@@ -3245,12 +3246,13 @@ button:focus{
 	margin-right: 10px;
 }
 .creative-banner-one .slide-social ul li a {
-	color: #fff;
+	color: rgb(0, 0, 0);
     font-size: 20px;
     width: 50px;
     height: 50px;
     display: inline-block;
     border: 1px solid rgba(255,255,255,0.2);
+	background-color: #fff;
     text-align: center;
     border-radius: 40px;
     line-height: 50px;
@@ -3259,28 +3261,11 @@ button:focus{
     padding-top: 100px;
 }
 
-/* Vehicle Services */
-.vehicle-box.style1 .left-info:after {
-content: attr(data-name);
-    position: absolute;
-    color: #fff;
-    font-size: 250px;
-    font-family: roboto;
-    left: 0;
-    top: 0;
-    text-transform: uppercase;
-    font-weight: 800;
-    line-height: 360px;
-    height: 100%;
-    width: 180px;
-    z-index: -1;
-    opacity: 0.2;
-}
 .vehicle-box.style1 .left-info {
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 80px 0px 150px 80px;
+    padding: 150px 0px 150px 80px;
     z-index: 9;
     position: relative;
 }
@@ -3295,7 +3280,7 @@ content: attr(data-name);
 }
 .vehicle-box.style1 .left-info .main-title {
     font-size: 28px;
-    color: var(--primary);
+    color: #fff;
     font-family: roboto;
     text-transform: uppercase;
     font-weight: 800;
@@ -3750,7 +3735,7 @@ position: relative;
 	background: #fff;
     border-radius: 4px;
     overflow: hidden;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+	border: 1px solid rgba(0,0,0,0.1);
 }
 .blog-post.post-style-1 .dlab-post-info {
     padding: 30px;
@@ -4095,6 +4080,19 @@ position: relative;
     justify-content: space-between;
     height: 100vh;
     padding: 180px 0 0;
+}
+.vehicle-box.style1 {
+	position: relative;
+}
+.vehicle-box.style1::before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.swiper-wrapper .left-info .top-info {
+	width: 80%;
 }
 .vehicle-box.style3 .left-info .top-info .title {
     font-size: 60px;
@@ -5643,4 +5641,111 @@ position: relative;
     height: 50px!important;
     line-height: 50px!important;
     width: 50px!important;
+}
+
+.section-head .gallery {
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+.section-head .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.minimized {
+	cursor: pointer;
+}
+#magnify {
+	display: none;
+	position: fixed;
+	width: 65%;
+	height: auto;
+	z-index: 9999;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#magnify img {
+	width: 100%;
+	border-radius: 10px;
+}
+#overlay {
+	display: none;
+	background: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.5;
+	z-index: 9990;
+}
+#close-popup {
+	padding: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+}
+#close-popup i {
+	width: 20px;
+	height: 20px;
+	background: url('../images/close.png') no-repeat center center;
+	background-size: 20px 20px;
+	display: block;
+	filter: invert(1);
+}
+i.text-18 {
+	font-size: 18px;
+}
+i.text-20 {
+	font-size: 20px;
+}
+i.text-24 {
+	font-size: 24px;
+}
+i.text-30 {
+	font-size: 30px;
+}
+.section-full .services {
+	border: 1px solid rgba(0,0,0,0.1);
+	width: 100%;
+	padding: 20px;
+	background-color: #fff;
+}
+.section-full .row.services-block {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+	gap: 20px;
+}
+.text-name-page {
+	padding-top: 100px;
+	position: relative;
+}
+.text-name-page .text-main {
+	padding: 100px 0;
+	position: relative;
+}
+.text-name-page .text-main h1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 45px;
+}
+.text-name-page::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	top: 0;
+	left: 0;
+}
+footer.footer-white .widget_getintuch li a {
+	color: #666;
+}
+.section-full img {
+	width: 100%;
+	height: max-content;
 }
