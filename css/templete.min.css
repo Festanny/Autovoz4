@@ -5703,6 +5703,9 @@ i.text-24 {
 i.text-30 {
 	font-size: 30px;
 }
+i.text-36 {
+	font-size: 36px;
+}
 .section-full .services {
 	border: 1px solid rgba(0,0,0,0.1);
 	width: 100%;
@@ -5742,4 +5745,14 @@ footer.footer-white .widget_getintuch li a {
 .section-full img {
 	width: 100%;
 	height: max-content;
+}
+.form-order i {
+	width: 50px;
+}
+.form-order form .block .choice {
+	display: flex;
+	align-items: center;
+}
+.form-order form .block .choice:not(:last-of-type) {
+	margin-bottom: 15px;
 }
