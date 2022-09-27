@@ -103,7 +103,7 @@ font-family: 'Lato', sans-serif;
 font-family: 'Raleway', sans-serif;
 */
 
-@import url("bootstrap.min.css");
+/* @import url("bootstrap.min.css"); */
 @import url("all.min.css");
 @import url("themify-icons.css");
 @import url("owl.carousel.css");
@@ -1924,7 +1924,7 @@ input[type=checkbox] + label:hover:before,
 input[type=radio] + label:hover:before {
     border-color: #3396d1;
 }
-input[type=checkbox] + label:before,
+/* input[type=checkbox] + label:before,
 input[type=radio] + label:before {
     background-color: #fff;
     border: 2px solid #b6b7b8;
@@ -1938,7 +1938,7 @@ input[type=radio] + label:before {
     top: 2px;
     transition: all linear 0.1s;
     width: 16px;
-}
+} */
 input[type=checkbox] + label:after {
     color: #fff;
     content: "\f00c";
@@ -2525,7 +2525,9 @@ blockquote:before {
 .main-bar {
     background: #FFFFFF;
     width: 100%;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .header-curve .logo-header:before,
 .header-curve .logo-header:after {
@@ -5184,7 +5186,10 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 ol.comment-list li.comment .comment-body {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
-    border-radius: 0;
+    border-radius: 5px;
+}
+.modal-content {
+    border-radius: 10px
 }
 /*== >transition ==*/
 
@@ -7591,11 +7596,8 @@ a,
     -moz-border-radius: 0 0 3px 3px;
 }
 .modal-header {
-    background: #EFBB20;
+    /* background: #EFBB20; */
     padding: 15px 25px;
-}
-.modal-header .modal-title {
-    color: #fff;
 }
 .modal .modal-body {
     padding: 25px;

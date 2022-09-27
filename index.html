@@ -3,9 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-	<title>Auto Care - Car Services Template</title>
+
+	<link rel="icon" href="https://autocare.dexignlab.com/xhtml/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://autocare.dexignlab.com/xhtml/images/favicon.png" />
+	
+    <title>Auto Care - Car Services Template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 	<!-- STYLESHEETS -->
@@ -14,9 +16,10 @@
 	<link rel="stylesheet" type="text/css" href="css/templete.min.css">
 	<link rel="stylesheet" type="text/css" href="css/swiper.css">
 	<link class="skin"  rel="stylesheet" type="text/css" href="css/skin-1.css">
-	<link class="skin"  rel="stylesheet" type="text/css" href="css/rangeslider.css">
+	<!-- <link class="skin"  rel="stylesheet" type="text/css" href="css/rangeslider.css"> -->
     <script src="https://kit.fontawesome.com/0396950dcd.js" crossorigin="anonymous"></script>
 	
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
 </head>
 <body id="bg"><div id="loading-area"></div>
     <div class="page-wraper creative-wraper-one">
@@ -34,8 +37,7 @@
                     <!-- extra nav -->
                     <div class="extra-nav">
                         <div class="extra-cell">
-                            <a href="contact.html" class="site-button-link quick-look">ЗАКАЗАТЬ ЗВОНОК</a>
-                            
+                            <a class="site-button-link quick-look" data-bs-toggle="modal" data-bs-target="#modalPhone">ЗАКАЗАТЬ ЗВОНОК</a>
                         </div>
                     </div>
                     <!-- Quik search -->
@@ -120,21 +122,74 @@
                                 <h2 class="title">Рассчитать стоимость</h2>
                                 <form action="">
                                     <div class="block">
-                                        <div class="choice">
-                                            <i class="fa-solid fa-car text-30"></i>
-                                            <span>Выберите тип автомобиля</span>
+                                        <div class="choice" data-bs-toggle="modal" data-bs-target="#orderDirections1" data-save="1">
+                                            <div class="choice-text">
+                                                <i class="fa-solid fa-car text-30"></i>
+                                                <span>Выберите тип автомобиля</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-right text-13 ml-10"></i>
                                         </div>
-                                        <div class="choice">
-                                            <i class="fa-solid fa-car-side text-30"></i>
-                                            <span>Модель и марка автомобиля</span>
+                                        <div class="choice" data-bs-toggle="modal" data-bs-target="#orderDirections2" data-save="2">
+                                            <div class="choice-text">
+                                                <i class="fa-solid fa-car-side text-30"></i>
+                                                <span>Модель и марка автомобиля</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-right text-13 ml-10"></i>
                                         </div>
-                                        <div class="choice">
-                                            <i class="fa-solid fa-city text-30"></i>
-                                            <span>Модель и марка автомобиля</span>
+                                        <div class="choice" data-bs-toggle="modal" data-bs-target="#orderDirections3" data-save="3">
+                                            <div class="choice-text">
+                                                <i class="fa-solid fa-city text-30"></i>
+                                                <span>Информация о перевозке</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-right text-13 ml-10"></i>
                                         </div>
-                                        <div class="choice">
-                                            <i class="fa-solid fa-person text-30"></i>
-                                            <span>Модель и марка автомобиля</span>
+                                        <div class="choice accordion-last-count" data-save="4">
+                                            
+                                            <div class="accordion accordion-flush" id="accordionCount">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header" id="count-headingOne">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#count-collapseOne" aria-expanded="false" aria-controls="count-collapseOne">
+                                                        <div class="choice-text">
+                                                            <i class="fa-solid fa-person text-30"></i>
+                                                            <span>Стоимость перевозки</span>
+                                                        </div>
+                                                        <i class="fa-solid fa-chevron-right text-13 i-acc-count"></i>
+                                                    </button>
+                                                  </h2>
+                                                  <div id="count-collapseOne" class="accordion-collapse collapse" aria-labelledby="count-headingOne" data-bs-parent="#accordionCount">
+                                                    <div class="accordion-body">
+                                                        <p class="manager">Наши менеджеры рассчитывают стоимость перевозки автомобиля по Вашей заявке!</p>
+                                                        <div class="info-block mb-3">
+                                                            <div class="info-block-main">
+                                                                <span><b>Вы хотите перевезти:</b></span>
+                                                                <div class="info">
+                                                                    <span></span>
+                                                                </div>
+                                                            </div>
+                                                            <span class="price-text"><b>Узнайте стоимость прямо сейчас!</b></span>
+                                                        </div>
+                                                        <div class="form-group-auto">
+                                                          <div class="form-group-auto-row mb-2">
+                                                              <input type="text" placeholder="Имя*" name="name" required="" class="nameForm form-control">
+                                                          </div>
+                                                          <div class="form-group-auto-row">
+                                                              <input type="text" placeholder="Номер телефона*" name="phone" id="phone" required="" class="phoneForm form-control">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group mt-2">
+                                                            <div class="checkbox-data">
+                                                                <input type="checkbox" class="form-check-input" id="agree-on-pdata-processing-check" required checked>
+                                                                <label class="form-check-label" for="agree-on-pdata-processing-check">Согласен на обработку персональных данных</label>
+                                                            </div>
+                                                            <div class="btn_form_order mb-3 mt-3">
+                                                                <button name="submit" type="submit" value="Submit" class="site-button" onclick="event.preventDefault()"> <span>Узнать стоимость</span> </button>
+                                                            </div>
+                                                            <p class="desc">* В течение 5 минут с Вами свяжется наш специалист и проинформирует вас о стоимости перевозки, а также ответит на все интересующие Вас вопросы.</p>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
                                         </div>
                                     </div>
                                 </form>
@@ -143,34 +198,34 @@
                         <div class="col-lg-6 m-b30 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.6s">
                             <div class="video-box">
                                 <h2 class="title">FAQ</h2>
-                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion accordion-flush" id="accordionFAQ">
                                     <div class="accordion-item">
-                                      <h2 class="accordion-header" id="flush-headingOne">
+                                      <h2 class="accordion-header" id="faq-headingOne">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                           Элемент аккордеона #1
                                         </button>
                                       </h2>
-                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="faq-headingOne" data-bs-parent="#accordionFAQ">
                                         <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
                                       </div>
                                     </div>
                                     <div class="accordion-item">
-                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                      <h2 class="accordion-header" id="faq-headingTwo">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                           Элемент аккордеона #2
                                         </button>
                                       </h2>
-                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="faq-headingTwo" data-bs-parent="#accordionFAQ">
                                         <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
                                       </div>
                                     </div>
                                     <div class="accordion-item">
-                                      <h2 class="accordion-header" id="flush-headingThree">
+                                      <h2 class="accordion-header" id="faq-headingThree">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                           Элемент аккордеона #3
                                         </button>
                                       </h2>
-                                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="faq-headingThree" data-bs-parent="#accordionFAQ">
                                         <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                                       </div>
                                     </div>
@@ -481,6 +536,159 @@
         <!-- scroll top button -->
         <button class="scroltop fas fa-arrow-up style1"></button>
     </div>
+
+  
+  <!-- Тип автомобиля -->
+  <div class="modal fade modalFormOrder" id="orderDirections1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-save="1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Выберите тип автомобиля</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div>
+                <input type="radio" id="car1" name="car" value="Седан" required>
+                <label for="car1">
+                    <img src="images/typeauto/sedan.png" alt="">
+                    <span>Седан</span>
+                </label>
+            </div>
+            <div>
+                <input type="radio" id="car2" name="car" value="Кроссовер" required>
+                <label for="car2">
+                    <img src="images/typeauto/crossover.png" alt="">
+                    <span>Кроссовер</span>
+                </label>
+            </div>
+            <div>
+                <input type="radio" id="car3" name="car" value="Хэтчбэк" required>
+                <label for="car3">
+                    <img src="images/typeauto/hatchback.png" alt="">
+                    <span>Хэтчбэк</span>
+                </label>
+            </div>
+            <div>
+                <input type="radio" id="car4" name="car" value="Универсал" required>
+                <label for="car4">
+                    <img src="images/typeauto/universal.png" alt="">
+                    <span>Универсал</span>
+                </label>
+            </div>
+            <div>
+                <input type="radio" id="car5" name="car" value="Внедорожник" required>
+                <label for="car5">
+                    <img src="images/typeauto/suv.png" alt="">
+                    <span>Внедорожник</span>
+                </label>
+            </div>
+            <div>
+                <input type="radio" id="car6" name="car" value="Грузовой" required>
+                <label for="car6">
+                    <img src="images/typeauto/load-truck.png" alt="">
+                    <span>Грузовой</span>
+                </label>
+            </div>
+            <div>
+                <input type="radio" id="car7" name="car" value="Мотоцикл" required>
+                <label for="car7">
+                    <img src="images/typeauto/bike.png" alt="">
+                    <span>Мотоцикл</span>
+                </label>
+            </div>
+            <div>
+                <input type="radio" id="car8" name="car" value="Другое" required>
+                <label for="car8">
+                    <img src="images/typeauto/sportcar.png" alt="">
+                    <span>Другое</span>
+                </label>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-success" data-save="1">Сохранить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модель и марка автомобиля -->
+  <div class="modal fade modalFormOrder" id="orderDirections2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-save="2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Выберите тип автомобиля</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="model-brand contact-style-1">
+                <div class="mb-2">
+                    <input name="model" type="text" class="form-control" placeholder="Марка авто">
+                    <span>Например, Nissan</span>
+                </div>
+                <div>
+                    <input name="brand" type="text" class="form-control" placeholder="Модель авто">
+                    <span>Например, Murano</span>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-success" data-save="2">Сохранить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Информация о перевозке -->
+  <div class="modal fade modalFormOrder" id="orderDirections3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-save="3">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Выберите тип автомобиля</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="model-brand contact-style-1">
+                <div class="mb-2">
+                    <input name="from" type="text" required="" class="form-control" placeholder="Откуда*">
+                    <span>Например, Москва</span>
+                </div>
+                <div class="mb-2">
+                    <input name="to" type="text" required="" class="form-control" placeholder="Куда*">
+                    <span>Например, Владивосток</span>
+                </div>
+                <div>
+                    <input type="text" class="form-control" placeholder="Желаемая дата отправки*" id="datepicker" name="date" required>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-success" data-save="3">Сохранить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Обратный звонок -->
+  <div class="modal fade callback" id="modalPhone" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Заказать обратный звонок</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <input name="phone" type="phone" required="" class="form-control phoneContact" placeholder="Номер телефона" id="phone">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success btn" id="btnContactPhone">Заказать звонок</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
 <!-- JavaScript  files ========================================= -->
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="js/plugins/wow.js"></script>
@@ -494,12 +702,15 @@
 <script src="js/plugins/masonry-3.1.4.js"></script>
 <script src="js/plugins/masonry.filter.js"></script>
 <script src="js/plugins/owl.carousel.js"></script>
-<script src="js/plugins/rangeslider.js" ></script>
+<!-- <script src="js/plugins/rangeslider.js" ></script> -->
 <script src="js/plugins/lightgallery-all.js"></script>
 <script src="js/custom.min.js"></script>
 <script src="js/dz.carousel.min.js"></script>
 <script src="js/dz.ajax.js"></script>
 <script src="js/swiper.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/script.js"></script>
 
 <script>
 	var swiper = new Swiper('.swiper-container', {

@@ -2899,8 +2899,8 @@ textarea.form-control-lg {
 
 .btn-success {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #198754;
-  --bs-btn-border-color: #198754;
+  --bs-btn-bg: var(--primary);
+  --bs-btn-border-color: var(--primary);
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #157347;
   --bs-btn-hover-border-color: #146c43;
@@ -5177,7 +5177,7 @@ textarea.form-control-lg {
 }
 .btn-close:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  /* box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); */
   opacity: 1;
 }
 .btn-close:disabled, .btn-close.disabled {
@@ -5261,7 +5261,7 @@ textarea.form-control-lg {
 }
 
 .modal {
-  --bs-modal-zindex: 1055;
+  --bs-modal-zindex: 105500;
   --bs-modal-width: 500px;
   --bs-modal-padding: 1rem;
   --bs-modal-margin: 0.5rem;
@@ -5342,7 +5342,7 @@ textarea.form-control-lg {
   pointer-events: auto;
   background-color: var(--bs-modal-bg);
   background-clip: padding-box;
-  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  /* border: var(--bs-modal-border-width) solid var(--bs-modal-border-color); */
   border-radius: var(--bs-modal-border-radius);
   outline: 0;
 }

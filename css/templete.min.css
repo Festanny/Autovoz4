@@ -2844,6 +2844,7 @@ button:focus{
     background-color: #fff;
 	padding-left: 80px;
 	padding-right: 100px;
+	box-shadow: 0 0 10px 10px rgb(0 0 0 / 10%);
 }
 .header-creative-one .main-bar .logo-header {
     margin: 5px 0;
@@ -2857,6 +2858,7 @@ button:focus{
     color: #000;
     font-family: roboto;
     margin-right: 20px;
+	cursor: pointer;
 }
 .header-creative-one .dlab-quik-search form{
 	max-width: 100%;
@@ -5711,6 +5713,7 @@ i.text-36 {
 	width: 100%;
 	padding: 20px;
 	background-color: #fff;
+	border-radius: 2px;
 }
 .section-full .row.services-block {
 	display: grid;
@@ -5746,13 +5749,147 @@ footer.footer-white .widget_getintuch li a {
 	width: 100%;
 	height: max-content;
 }
-.form-order i {
+.form-order .choice-text i {
 	width: 50px;
 }
 .form-order form .block .choice {
 	display: flex;
 	align-items: center;
+	padding: 10px 15px;
+	border: 1px solid rgba(0,0,0,0.1);
+	justify-content: space-between;
+	cursor: pointer;
+}
+.form-order form .block .choice.success {
+	background-color: var(--rgba-primary-5)
 }
 .form-order form .block .choice:not(:last-of-type) {
+	margin-bottom: 5px;
+}
+.form-order form .block .choice.choice:not(:last-of-type) div {
+	display: flex;
+	align-items: center;
+}
+#orderDirections1 .modal-body label img {
+    width: 150px;
+	height: 60px;
+    object-fit: contain;
+	margin-right: 30px;
+}
+#orderDirections1 .modal-body label {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding: 15px;
+	margin-bottom: 0;
+	cursor: pointer;
+	font-size: 18px;
+}
+#orderDirections1 .modal-body div:last-of-type label {
+	border: 0;
+}
+#orderDirections1 .modal-body label:hover {
+	background-color: var(--rgba-primary-5)
+}
+#orderDirections1 .modal-body input[type='radio'] {
+	display: none;
+}
+#orderDirections1 .modal-body input:checked + label {
+	background-color: var(--rgba-primary-5);
+	cursor: default;
+}
+#orderDirections2 div span,
+#orderDirections3 div span {
+	font-size: 12px;
+	color: var(--color2)
+}
+.accordion-last-count .accordion-button {
+	padding: 0;
+}
+.accordion-last-count,
+.accordion-last-count .accordion.accordion-flush {
+	width: 100%;
+}
+.accordion-last-count .accordion-button:not(.collapsed) {
+	color: var(--color);
+	box-shadow: none;
+	background-color: transparent;
+}
+.accordion-last-count .accordion-button::after {
+	display: none;
+}
+.accordion-last-count .choice-text {
+	display: flex;
+	align-items: center;
+}
+.accordion-last-count .accordion-button {
+	display: flex;
+	justify-content: space-between;
+}
+.accordion-last-count .accordion-button .i-acc-count {
+	transition: all .3s;
+}
+.accordion-last-count .accordion-button:not(.collapsed) .i-acc-count {
+	transform: rotate(-90deg);
+}
+.accordion-last-count .accordion-body .manager {
+	color: var(--primary)
+}
+.accordion-last-count .accordion-body {
+	cursor: default;
+}
+.accordion-last-count .accordion-body .info-block .info-block-main {
+	margin-bottom: 11px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	padding-bottom: 11px;
+}
+.text-page p {
 	margin-bottom: 15px;
+}
+.text-page ol,
+.text-page ul {
+	margin-left: 30px;
+}
+.accordion-last-count .accordion-body input[type='checkbox'] {
+	opacity: 1;
+}
+.accordion-last-count .accordion-body .form-group .checkbox-data {
+	display: flex;
+}
+.accordion-last-count .accordion-body .form-group .checkbox-data label {
+	font-weight: normal;
+}
+.accordion-last-count .accordion-body .form-group .btn_form_order,
+.accordion-last-count .accordion-body .form-group .btn_form_order button {
+	width: 100%;
+}
+.accordion-last-count .accordion-body .form-group .desc {
+	font-size: 14px;
+}
+.accordion-last-count.expectation .accordion-button {
+	background-color: transparent!important;
+}
+.expectation {
+	background-color: rgb(252 255 0 / 26%)!important;
+}
+.successBlock {
+	background-color: var(--primary)!important;
+}
+.errorBlock {
+	background-color: var(--red)!important;
+}
+.successBlock .choice-text span,
+.successBlock .choice-text i,
+.successBlock i,
+.errorBlock .choice-text span,
+.errorBlock .choice-text i,
+.errorBlock i {
+	color: #fff;
+}
+.accordion-last-count.expectation .accordion-item {
+	background-color: transparent!important;
+}
+.empty {
+	border-color: var(--red);
 }
