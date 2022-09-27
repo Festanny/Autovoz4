@@ -3357,10 +3357,6 @@ button:focus{
 	.header-creative-one .extra-nav {
 		padding: 28px 100px 27px 0;
 	}
-	.creative-banner-one .bottom-aside {
-		height: 100px;
-		right: 80px;
-	}
 	.creative-banner-one .bottom-aside .video-box {
 		width: 165px;
 	}
@@ -3375,7 +3371,16 @@ button:focus{
 		padding: 10px 0;
 	}
 	.vehicle-box.style1 .left-info{
-	    padding: 30px 0px 100px 30px;	
+	    padding: 50px 0;
+	}
+	.vehicle-box.style1 .left-info .main-title {
+		font-size: 20px;
+		text-transform: none;
+		font-weight: normal;
+	}
+	.vehicle-box.style1 .left-info .title {
+		font-size: 50px;
+		line-height: 1.2;
 	}
 	.creative-banner-one .slide-social{
 		left: 30px;
@@ -3405,11 +3410,11 @@ button:focus{
 		padding:28px 30px 27px 0;
 	}
 	.vehicle-box.style1 .left-info .title {
-		font-size: 60px;
-		line-height: 60px;
+		font-size: 40px;
+		line-height: 1.2;
 	}
 	.vehicle-box.style1 .left-info .main-title {
-		font-size: 24px;
+		font-size: 20px;
 		line-height: 24px;
 	}
 	.vehicle-box.style1 .left-info .bottom-info h3 {
@@ -3420,7 +3425,7 @@ button:focus{
 		margin-top: auto;
 	}
 	.creative-banner-one .slide-social ul li {
-		margin-right: 20px;
+		margin-right: 5px;
 	}
 	.creative-banner-one .swiper-button-arrow .swiper-button-prev:before, 
 	.creative-banner-one .swiper-button-arrow .swiper-button-next:before {
@@ -3451,6 +3456,12 @@ button:focus{
 }
 
 @media only screen and (max-width: 767px) {
+	.vehicle-box.style1 .left-info .main-title {
+		font-size: 18px;
+	}
+	.vehicle-box.style1 .left-info .title {
+		font-size: 30px;
+	}
 	.creative-banner-one .slide-social {
 		display: none;
 	}
@@ -3459,7 +3470,7 @@ button:focus{
 		transform: translate(20px, -50%);
 	}
 	.vehicle-box.style1 .left-info {
-		padding: 30px 0px 80px 20px;
+		padding: 50px 12px;
 	}
 	.car-service-client .testimonial-1{
 		padding: 20px 10px;
@@ -3487,10 +3498,6 @@ button:focus{
 	}
 	.creative-banner-one .bottom-aside .video-box {
 		display: none;
-	}
-	.creative-banner-one .bottom-aside {
-		height: 70px;
-		right: 70px;
 	}
 	.creative-banner-one .swiper-button-arrow {
 		left: 50%;
@@ -3897,6 +3904,9 @@ position: relative;
 	}
 }
 @media only screen and (max-width: 991px) {
+	.about-box .container .p-r50 {
+		padding-right: 0;
+	}
 	.vehicle-box.style2 .title {
 		font-size: 60px;
 		line-height: 60px;
