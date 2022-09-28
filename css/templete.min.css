@@ -1766,7 +1766,6 @@
 	.pricingtable-highlight .pricingtable-price{
 		padding: 20px;
 	}
-	
 }
 @media only screen and (max-width: 600px) {
 	.dlab-newsletter .equal-col{
@@ -5912,6 +5911,20 @@ footer.footer-white .widget_getintuch li a {
 	background-color: var(--red);
 	cursor: default;
 }
+.directions-page .info-block-directions {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 50px;
+}
+
+@media screen and (max-width: 991px) {
+	.directions-page .info-block-directions {
+		grid-template-columns: 1fr;
+	}
+	.header-sidenav .header-nav.full-sidenav .nav > li > a {
+		font-size: 16px;
+	}
+}
 
 @media screen and (max-width: 480px) {
 	.header-creative-one .extra-nav .quick-look {
@@ -5947,9 +5960,6 @@ footer.footer-white .widget_getintuch li a {
 	}
 	.blog-post.post-style-1 .post-title {
 		font-size: 18px;
-	}
-	.header-sidenav .header-nav.full-sidenav .nav > li > a {
-		font-size: 16px;
 	}
 	.modal.show .modal-dialog {
 		margin-top: 5px!important;
