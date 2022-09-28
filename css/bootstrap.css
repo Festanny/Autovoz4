@@ -4430,7 +4430,8 @@ textarea.form-control-lg {
   box-shadow: var(--bs-accordion-btn-focus-box-shadow); */
 }
 
-.accordion-header {
+.accordion-header,
+.accordion-header.h2 {
   margin-bottom: 0;
 }
 
@@ -5384,6 +5385,9 @@ textarea.form-control-lg {
 .modal-title {
   margin-bottom: 0;
   line-height: var(--bs-modal-title-line-height);
+}
+.modal-title.h5 {
+  margin-bottom: 0;
 }
 
 .modal-body {

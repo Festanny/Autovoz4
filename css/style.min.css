@@ -241,7 +241,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     color: #333333;
     font-family:"Poppins",sans-serif;
 }
@@ -250,7 +256,13 @@ h2 a,
 h3 a,
 h4 a,
 h5 a,
-h6 a {
+h6 a,
+.h1 a,
+.h2 a,
+.h3 a,
+.h4 a,
+.h5 a,
+.h6 a {
     color: #333333;
 }
 h1 a:hover,
@@ -258,41 +270,47 @@ h2 a:hover,
 h3 a:hover,
 h4 a:hover,
 h5 a:hover,
-h6 a:hover{
+h6 a:hover,
+.h1 a:hover,
+.h2 a:hover,
+.h3 a:hover,
+.h4 a:hover,
+.h5 a:hover,
+.h6 a:hover {
 	color:var(--primary);
 }
 
-h1 {
+h1, .h1 {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 25px;
 	font-weight: 700;
 }
-h2 {
+h2, .h2 {
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 20px;
 	font-weight: 700;
 }
-h3 {
+h3, .h3 {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 20px;
 	font-weight: 700;
 }
-h4 {
+h4, .h4 {
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 15px;
 	font-weight: 600;
 }
-h5 {
+h5, .h5 {
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 10px;
 	font-weight: 600;
 }
-h6 {
+h6, .h6 {
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 10px;
@@ -1682,7 +1700,13 @@ dl dd {
 .dlab-info-has.bg-white h3,
 .dlab-info-has.bg-white h4,
 .dlab-info-has.bg-white h5,
-.dlab-info-has.bg-white h6 {
+.dlab-info-has.bg-white h6,
+.dlab-info-has.bg-white .h1,
+.dlab-info-has.bg-white .h2,
+.dlab-info-has.bg-white .h3,
+.dlab-info-has.bg-white .h4,
+.dlab-info-has.bg-white .h5,
+.dlab-info-has.bg-white .h6 {
     color: #3d474a;
 }
 .dlab-info-has.bg-white h1 a,
@@ -1690,7 +1714,13 @@ dl dd {
 .dlab-info-has.bg-white h3 a,
 .dlab-info-has.bg-white h4 a,
 .dlab-info-has.bg-white h5 a,
-.dlab-info-has.bg-white h6 a {
+.dlab-info-has.bg-white h6 a,
+.dlab-info-has.bg-white .h1 a,
+.dlab-info-has.bg-white .h2 a,
+.dlab-info-has.bg-white .h3 a,
+.dlab-info-has.bg-white .h4 a,
+.dlab-info-has.bg-white .h5 a,
+.dlab-info-has.bg-white .h6 a {
     color: #3d474a;
 }
 .dlab-info-has.bg-white .dlab-info-has-text,
@@ -1703,6 +1733,12 @@ dl dd {
 .dlab-info-has h4,
 .dlab-info-has h5,
 .dlab-info-has h6,
+.dlab-info-has .h1,
+.dlab-info-has .h2,
+.dlab-info-has .h3,
+.dlab-info-has .h4,
+.dlab-info-has .h5,
+.dlab-info-has .h6,
 .dlab-info-has p,
 .dlab-info-has-text,
 .dlab-info-has a {
@@ -3672,7 +3708,13 @@ blockquote:before {
 .banner-inner-row h3,
 .banner-inner-row h4,
 .banner-inner-row h5,
-.banner-inner-row h6 {
+.banner-inner-row h6,
+.banner-inner-row .h1,
+.banner-inner-row .h2,
+.banner-inner-row .h3,
+.banner-inner-row .h4,
+.banner-inner-row .h5,
+.banner-inner-row .h6 {
     color: #FFF;
 }
 /*== >  Provider banner off ==*/
@@ -3720,42 +3762,57 @@ blockquote:before {
 .tp-caption h3,
 .tp-caption h4,
 .tp-caption h5,
-.tp-caption h6 {
+.tp-caption h6,
+.tp-caption .h1,
+.tp-caption .h2,
+.tp-caption .h3,
+.tp-caption .h4,
+.tp-caption .h5,
+.tp-caption .h6 {
     font-weight: 800;
     margin-bottom: 24px;
     color: #FFFFFF;
 }
-.tp-caption h1 {
+.tp-caption h1,
+.tp-caption .h1 {
     font-size: 70px;
     line-height: 60px;
 }
-.tp-caption h2 {
+.tp-caption h2,
+.tp-caption .h2 {
     font-size: 60px;
     line-height: 50px;
 }
-.tp-caption h3 {
+.tp-caption h3,
+.tp-caption .h3 {
     font-size: 50px;
     line-height: 40px;
     margin-bottom: 20px;
 }
-.tp-caption h4 {
+.tp-caption h4,
+.tp-caption .h4 {
     font-size: 40px;
     line-height: 30px;
     margin-bottom: 15px;
 }
-.tp-caption h5 {
+.tp-caption h5,
+.tp-caption .h5 {
     font-size: 30px;
     line-height: 4px;
     margin-bottom: 10px;
 }
-.tp-caption h6 {
+.tp-caption h6,
+.tp-caption .h6 {
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 10px;
 }
 .tp-caption h4,
 .tp-caption h5,
-.tp-caption h6 {
+.tp-caption h6,
+.tp-caption .h4,
+.tp-caption .h5,
+.tp-caption .h6 {
     font-weight: 600;
 }
 .tp-caption .text {
@@ -8541,7 +8598,19 @@ footer h2 a,
 footer h3 a,
 footer h4 a,
 footer h5 a,
-footer h6 a {
+footer h6 a,
+footer .h1,
+footer .h2,
+footer .h3,
+footer .h4,
+footer .h5,
+footer .h6,
+footer .h1 a,
+footer .h2 a,
+footer .h3 a,
+footer .h4 a,
+footer .h5 a,
+footer .h6 a {
     color: #fff;
 }
 footer p,
@@ -8556,6 +8625,13 @@ footer h3 a,
 footer h4 a,
 footer h5 a,
 footer h6 a,
+footer p a,
+footer .h1 a,
+footer .h2 a,
+footer .h3 a,
+footer .h4 a,
+footer .h5 a,
+footer .h6 a,
 footer p a {
     color: var(--primary);
 }
@@ -8806,7 +8882,10 @@ button.scroltop {
 }
 .section-head h1,
 .section-head h2,
-.section-head h3 {
+.section-head h3,
+.section-head .h1,
+.section-head .h2,
+.section-head .h3 {
     margin-top: 0;
 }
 .title-small {
@@ -8834,6 +8913,12 @@ button.scroltop {
 .text-white h4,
 .text-white h5,
 .text-white h6,
+.text-white .h1,
+.text-white .h2,
+.text-white .h3,
+.text-white .h4,
+.text-white .h5,
+.text-white .h6,
 .text-white p,
 .text-white .title-small {
     color: #FFF;
@@ -8876,7 +8961,8 @@ button.scroltop {
     max-width: 420px;
     margin: 30px auto;
 }
-.page-notfound h5 {
+.page-notfound h5,
+.page-notfound .h5 {
     font-size: 50px;
     line-height: 50px;
     margin-bottom: 40px;
@@ -9012,7 +9098,8 @@ ul.dlab-gallery-listing {
 	.boxed .service-content{
 		padding: 60px 40px;
 	}
-	.boxed .dz-box-container .section-head h2 {
+	.boxed .dz-box-container .section-head h2,
+    .boxed .dz-box-container .section-head .h2 {
 		font-size: 50px;
 	}
 	.boxed .dz-service-area > div .dz-service-box:first-child {
@@ -9615,7 +9702,8 @@ ol.commentlist li .star-rating {
 	border-top:1px solid rgba(255,255,255,0.2);
 	letter-spacing:2px;
 }
-.coming-soon-content h2 {
+.coming-soon-content h2,
+.coming-soon-content .h2 {
     font-size: 50px;
 	font-weight:300;
 	min-height:50px;
@@ -9772,7 +9860,8 @@ ol.commentlist li .star-rating {
         padding-top: 50px;
         padding-bottom: 50px;
     }
-    .dlab-coming-soon.two-box .dlab-coming-bx h2 {
+    .dlab-coming-soon.two-box .dlab-coming-bx h2,
+    .dlab-coming-soon.two-box .dlab-coming-bx .h2 {
         margin-top: 0;
     }
     .coming-side-bar {
@@ -9808,7 +9897,8 @@ ol.commentlist li .star-rating {
         margin-top: 10px;
         margin-bottom: 50px;
     }
-    .coming-soon-content h2 {
+    .coming-soon-content h2,
+    .coming-soon-content .h2 {
         font-size: 30px;
     }
     .countdown .date span {
@@ -10129,6 +10219,12 @@ ol.commentlist li .star-rating {
 .font-style-1 h4,
 .font-style-1 h5,
 .font-style-1 h6,
+.font-style-1 .h1,
+.font-style-1 .h2,
+.font-style-1 .h3,
+.font-style-1 .h4,
+.font-style-1 .h5,
+.font-style-1 .h6,
 .date-style-3 .post-date{ 
 	font-family: 'Oswald', sans-serif;
 }
@@ -10138,6 +10234,12 @@ ol.commentlist li .star-rating {
 .font-style-2 h4,
 .font-style-2 h5,
 .font-style-2 h6,
+.font-style-2 .h1,
+.font-style-2 .h2,
+.font-style-2 .h3,
+.font-style-2 .h4,
+.font-style-2 .h5,
+.font-style-2 .h6,
 .date-style-3 .post-date{ 
 	font-family: 'Roboto', sans-serif;
 }
@@ -10147,6 +10249,12 @@ ol.commentlist li .star-rating {
 .font-style-3 h4,
 .font-style-3 h5,
 .font-style-3 h6,
+.font-style-3 .h1,
+.font-style-3 .h2,
+.font-style-3 .h3,
+.font-style-3 .h4,
+.font-style-3 .h5,
+.font-style-3 .h6,
 .date-style-3 .post-date{ 
 	font-family: 'Montserrat', sans-serif;
 }
@@ -10156,6 +10264,12 @@ ol.commentlist li .star-rating {
 .font-style-4 h4,
 .font-style-4 h5,
 .font-style-4 h6,
+.font-style-4 .h1,
+.font-style-4 .h2,
+.font-style-4 .h3,
+.font-style-4 .h4,
+.font-style-4 .h5,
+.font-style-4 .h6,
 .date-style-3 .post-date{ 
 	font-family: 'Roboto Slab', serif;
 }
@@ -10165,6 +10279,12 @@ ol.commentlist li .star-rating {
 .font-style-5 h4,
 .font-style-5 h5,
 .font-style-5 h6,
+.font-style-5 .h1,
+.font-style-5 .h2,
+.font-style-5 .h3,
+.font-style-5 .h4,
+.font-style-5 .h5,
+.font-style-5 .h6,
 .date-style-3 .post-date{ 
 	font-family: 'PT Serif', serif;
 }
@@ -10174,6 +10294,12 @@ ol.commentlist li .star-rating {
 .font-style-6 h4,
 .font-style-6 h5,
 .font-style-6 h6,
+.font-style-6 .h1,
+.font-style-6 .h2,
+.font-style-6 .h3,
+.font-style-6 .h4,
+.font-style-6 .h5,
+.font-style-6 .h6,
 .date-style-3 .post-date{ 
 	font-family: 'Nunito', sans-serif;
 }
@@ -10183,6 +10309,12 @@ ol.commentlist li .star-rating {
 .font-style-7 h4,
 .font-style-7 h5,
 .font-style-7 h6,
+.font-style-7 .h1,
+.font-style-7 .h2,
+.font-style-7 .h3,
+.font-style-7 .h4,
+.font-style-7 .h5,
+.font-style-7 .h6,
 .date-style-3 .post-date{ 
 	font-family: 'Quicksand', sans-serif;
 }
@@ -10192,6 +10324,12 @@ ol.commentlist li .star-rating {
 .font-style-8 h4,
 .font-style-8 h5,
 .font-style-8 h6,
+.font-style-8 .h1,
+.font-style-8 .h2,
+.font-style-8 .h3,
+.font-style-8 .h4,
+.font-style-8 .h5,
+.font-style-8 .h6,
 .date-style-3 .post-date{ 
 	font-family: 'Open Sans', sans-serif;
 }
@@ -10435,13 +10573,15 @@ ol.commentlist li .star-rating {
     -moz-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
 }
-.add-box h2{
+.add-box h2,
+.add-box .h2 {
 	font-size: 50px;
     line-height: 50px;
 	font-weight: 700;
 	text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.add-box h5{
+.add-box h5,
+.add-box .h5 {
 	font-size: 20px;
     line-height: 20px;
 	font-weight: 700;
@@ -10454,7 +10594,9 @@ ol.commentlist li .star-rating {
 	opacity:0.05;	
 }
 .item-add.add-style-2 .add-box h2,
-.item-add.add-style-2 .add-box h5{
+.item-add.add-style-2 .add-box h5,
+.item-add.add-style-2 .add-box .h2,
+.item-add.add-style-2 .add-box .h5 {
 	text-shadow:none;
 }
 /* Product Details Item */
