@@ -5993,6 +5993,11 @@ footer.footer-white .widget_getintuch li a {
 	grid-template-columns: repeat(2, 1fr);
 	gap: 50px;
 }
+.text-page a {
+    color: var(--primary);
+    outline: 0 none;
+    text-decoration: none;
+}
 
 @media screen and (max-width: 1200px) {
 	.text-name-page {
