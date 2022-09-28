@@ -3523,6 +3523,9 @@ button:focus{
 	.vehicle-box.style1  .right-info {
 		display: none;
 	}
+	.creative-banner-one .swiper-wrapper .swiper-slide {
+		padding-top: 70px;
+	}
 }
 
 
@@ -5742,6 +5745,7 @@ i.text-36 {
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 45px;
+	margin-bottom: 0;
 }
 .text-name-page::before {
 	content: '';
@@ -5869,6 +5873,7 @@ footer.footer-white .widget_getintuch li a {
 }
 .accordion-last-count .accordion-body .form-group .checkbox-data label {
 	font-weight: normal;
+	flex: 1;
 }
 .accordion-last-count .accordion-body .form-group .btn_form_order,
 .accordion-last-count .accordion-body .form-group .btn_form_order button {
@@ -5917,6 +5922,11 @@ footer.footer-white .widget_getintuch li a {
 	gap: 50px;
 }
 
+@media screen and (max-width: 1200px) {
+	.text-name-page {
+		padding-top: 80px;
+	}
+}
 @media screen and (max-width: 991px) {
 	.directions-page .info-block-directions {
 		grid-template-columns: 1fr;
@@ -5925,7 +5935,19 @@ footer.footer-white .widget_getintuch li a {
 		font-size: 16px;
 	}
 }
-
+@media screen and (max-width: 800px) {
+	.text-name-page .text-main h1 {
+		font-size: 40px;
+	}
+	.breadcrumb-row ul li {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.text-name-page .text-main h1 {
+		font-size: 35px;
+	}
+}
 @media screen and (max-width: 480px) {
 	.header-creative-one .extra-nav .quick-look {
 		margin-right: 0;
@@ -5941,7 +5963,7 @@ footer.footer-white .widget_getintuch li a {
 		text-align: center;
 	}
 	.creative-banner-one .swiper-wrapper .swiper-slide {
-		padding-top: 160px;
+		padding-top: 130px;
 	}
 	.swiper-wrapper .left-info .top-info {
 		width: 100%;
@@ -5967,6 +5989,48 @@ footer.footer-white .widget_getintuch li a {
 	.section-head .gallery {
 		grid-template-columns: repeat(2, 1fr);
 	}
+	#orderDirections1 .modal-body label img {
+		width: 130px;
+		height: 40px;
+	}
+	#orderDirections1 .modal-body label {
+		font-size: 16px;
+	}
+	.accordion-last-count .accordion-body .form-group .checkbox-data label {
+		font-size: 14px;
+	}
+	.accordion-last-count .accordion-body .form-group .btn_form_order button {
+		font-size: 14px;
+	}
+	.header-creative-one .extra-nav {
+		padding: 15px 0;
+	}
+	.form-order .choice-text span,
+	.video-box #accordionFAQ h2 button,
+	.video-box #accordionFAQ .accordion-body {
+		font-size: 14px;
+	}
+	.text-name-page {
+		padding-top: 130px;
+	}
+	.text-name-page .text-main {
+		padding: 70px 0;
+	}
+	.text-name-page .text-main h1 {
+		font-size: 30px;
+	}
+	.contact-style-1 .site-button {
+		font-size: 14px;
+	}
+	.text-page {
+		font-size: 15px;
+	}
+	.header-sidenav .header-nav.full-sidenav .nav > li > a {
+		padding: 10px;
+	}
+	.testimonial-2 .testimonial-name {
+		padding-top: 0;
+	}
 }
 @media screen and (max-width: 400px) {
 	.vehicle-box.style1 .left-info .title {
@@ -5979,5 +6043,42 @@ footer.footer-white .widget_getintuch li a {
 	.vehicle-box.style1::before {
 		background-color: rgba(0, 0, 0, 0.5);
 	}
-	
+	#orderDirections1 .modal-body label {
+		flex-direction: column;
+		padding: 10px;
+	}
+	#orderDirections1 .modal-body label img {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.accordion-last-count .accordion-body .info-block .info-block-main .btn {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 360px) {
+	.creative-banner-one .swiper-wrapper .swiper-slide {
+		padding-top: 70px;
+	}
+	.vehicle-box.style1 .left-info .title {
+		font-size: 22px;
+		line-height: 1.3;
+	}
+	#orderDirections1 .modal-body label {
+		font-size: 14px;
+	}
+	.text-name-page {
+		padding-top: 70px;
+	}
+	.text-name-page .text-main h1 {
+		font-size: 25px;
+	}
+	.text-name-page .text-main {
+		padding: 50px 0;
+	}
+	.breadcrumb-row ul li {
+		font-size: 14px;
+	}
+	.text-page {
+		font-size: 14px;
+	}
 }
