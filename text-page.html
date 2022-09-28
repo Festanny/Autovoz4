@@ -20,7 +20,6 @@
 </head>
 <body id="bg"><div id="loading-area"></div>
     <div class="page-wraper creative-wraper-one">
-        <!-- Header -->
         <header class="site-header header header-creative-one header-sidenav onepage">
             <div class="sticky-header main-bar-wraper navbar-expand-lg">
                 <div class="main-bar clearfix">
@@ -95,7 +94,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <h1>Заголовок 1</h1>
+                            <div>Заголовок 1</div>
                             <h2>Заголовок 2</h2>
                             <h3>Заголовок 3</h3>
                             <h4>Заголовок 4</h4>
@@ -122,7 +121,6 @@
                 </div>
             </div>
 
-        <!-- Footer -->
         <footer class="site-footer footer-white" id="footer">
             <div class="footer-top">
                 <div class="container">
@@ -140,7 +138,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 footer-col-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
                             <div class="widget widget_services">
-                                <h4 class="m-b15 text-uppercase">Our services</h4>
+                                <div class="h4 m-b15 text-uppercase">Our services</div>
                                 <div class="dlab-separator-outer m-b10">
                                     <div class="dlab-separator bg-primary"></div>
                                 </div>
@@ -156,7 +154,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 footer-col-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
                             <div class="widget widget_getintuch">
-                                <h4 class="m-b15 text-uppercase">Contact us</h4>
+                                <div class="h4 m-b15 text-uppercase">Contact us</div>
                                 <div class="dlab-separator-outer m-b10">
                                     <div class="dlab-separator bg-primary"></div>
                                 </div>
@@ -170,7 +168,6 @@
                     </div>
                 </div>
             </div>
-            <!-- footer bottom part -->
             <div class="footer-bottom">
                 <div class="container">
                     <div class="row">
@@ -188,162 +185,160 @@
                 </div>
             </div>
         </footer>
-        <!-- Footer END-->
-        <!-- scroll top button -->
         <button class="scroltop fas fa-arrow-up style1"></button>
     </div>
 
 
     <!-- Тип автомобиля -->
-  <div class="modal fade modalFormOrder" id="orderDirections1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-save="1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Выберите тип автомобиля</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <div>
-                <input type="radio" id="car1" name="car" value="Седан" required>
-                <label for="car1">
-                    <img src="images/typeauto/sedan.png" alt="">
-                    <span>Седан</span>
-                </label>
+    <div class="modal fade modalFormOrder" id="orderDirections1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-save="1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="h5 modal-title" id="staticBackdropLabel">Выберите тип автомобиля</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div>
-                <input type="radio" id="car2" name="car" value="Кроссовер" required>
-                <label for="car2">
-                    <img src="images/typeauto/crossover.png" alt="">
-                    <span>Кроссовер</span>
-                </label>
-            </div>
-            <div>
-                <input type="radio" id="car3" name="car" value="Хэтчбэк" required>
-                <label for="car3">
-                    <img src="images/typeauto/hatchback.png" alt="">
-                    <span>Хэтчбэк</span>
-                </label>
-            </div>
-            <div>
-                <input type="radio" id="car4" name="car" value="Универсал" required>
-                <label for="car4">
-                    <img src="images/typeauto/universal.png" alt="">
-                    <span>Универсал</span>
-                </label>
-            </div>
-            <div>
-                <input type="radio" id="car5" name="car" value="Внедорожник" required>
-                <label for="car5">
-                    <img src="images/typeauto/suv.png" alt="">
-                    <span>Внедорожник</span>
-                </label>
-            </div>
-            <div>
-                <input type="radio" id="car6" name="car" value="Грузовой" required>
-                <label for="car6">
-                    <img src="images/typeauto/load-truck.png" alt="">
-                    <span>Грузовой</span>
-                </label>
-            </div>
-            <div>
-                <input type="radio" id="car7" name="car" value="Мотоцикл" required>
-                <label for="car7">
-                    <img src="images/typeauto/bike.png" alt="">
-                    <span>Мотоцикл</span>
-                </label>
-            </div>
-            <div>
-                <input type="radio" id="car8" name="car" value="Другое" required>
-                <label for="car8">
-                    <img src="images/typeauto/sportcar.png" alt="">
-                    <span>Другое</span>
-                </label>
-            </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-          <button type="button" class="btn btn-success" data-save="1">Сохранить</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Модель и марка автомобиля -->
-  <div class="modal fade modalFormOrder" id="orderDirections2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-save="2">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Выберите тип автомобиля</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <div class="model-brand contact-style-1">
-                <div class="mb-2">
-                    <input name="model" type="text" class="form-control" placeholder="Марка авто">
-                    <span>Например, Nissan</span>
+            <div class="modal-body">
+                <div>
+                    <input type="radio" id="car1" name="car" value="Седан" required>
+                    <label for="car1">
+                        <img src="images/typeauto/sedan.png" alt="">
+                        <span>Седан</span>
+                    </label>
                 </div>
                 <div>
-                    <input name="brand" type="text" class="form-control" placeholder="Модель авто">
-                    <span>Например, Murano</span>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-          <button type="button" class="btn btn-success" data-save="2">Сохранить</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Информация о перевозке -->
-  <div class="modal fade modalFormOrder" id="orderDirections3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-save="3">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Выберите тип автомобиля</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <div class="model-brand contact-style-1">
-                <div class="mb-2">
-                    <input name="from" type="text" required="" class="form-control" placeholder="Откуда*">
-                    <span>Например, Москва</span>
-                </div>
-                <div class="mb-2">
-                    <input name="to" type="text" required="" class="form-control" placeholder="Куда*">
-                    <span>Например, Владивосток</span>
+                    <input type="radio" id="car2" name="car" value="Кроссовер" required>
+                    <label for="car2">
+                        <img src="images/typeauto/crossover.png" alt="">
+                        <span>Кроссовер</span>
+                    </label>
                 </div>
                 <div>
-                    <input type="text" class="form-control" placeholder="Желаемая дата отправки*" id="datepicker" name="date" required>
+                    <input type="radio" id="car3" name="car" value="Хэтчбэк" required>
+                    <label for="car3">
+                        <img src="images/typeauto/hatchback.png" alt="">
+                        <span>Хэтчбэк</span>
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" id="car4" name="car" value="Универсал" required>
+                    <label for="car4">
+                        <img src="images/typeauto/universal.png" alt="">
+                        <span>Универсал</span>
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" id="car5" name="car" value="Внедорожник" required>
+                    <label for="car5">
+                        <img src="images/typeauto/suv.png" alt="">
+                        <span>Внедорожник</span>
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" id="car6" name="car" value="Грузовой" required>
+                    <label for="car6">
+                        <img src="images/typeauto/load-truck.png" alt="">
+                        <span>Грузовой</span>
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" id="car7" name="car" value="Мотоцикл" required>
+                    <label for="car7">
+                        <img src="images/typeauto/bike.png" alt="">
+                        <span>Мотоцикл</span>
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" id="car8" name="car" value="Другое" required>
+                    <label for="car8">
+                        <img src="images/typeauto/sportcar.png" alt="">
+                        <span>Другое</span>
+                    </label>
                 </div>
             </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-success" data-save="1">Сохранить</button>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-          <button type="button" class="btn btn-success" data-save="3">Сохранить</button>
         </div>
-      </div>
     </div>
-  </div>
 
-  <!-- Обратный звонок -->
-  <div class="modal fade callback" id="modalPhone" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Заказать обратный звонок</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Модель и марка автомобиля -->
+    <div class="modal fade modalFormOrder" id="orderDirections2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-save="2">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="h5 modal-title" id="staticBackdropLabel">Выберите тип автомобиля</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="model-brand contact-style-1">
+                    <div class="mb-2">
+                        <input name="model" type="text" class="form-control" placeholder="Марка авто">
+                        <span>Например, Nissan</span>
+                    </div>
+                    <div>
+                        <input name="brand" type="text" class="form-control" placeholder="Модель авто">
+                        <span>Например, Murano</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-success" data-save="2">Сохранить</button>
+            </div>
         </div>
-        <div class="modal-body">
-            <input name="phone" type="phone" required="" class="form-control phoneContact" placeholder="Номер телефона" id="phone">
         </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-success btn" id="btnContactPhone">Заказать звонок</button>
-          </div>
-      </div>
     </div>
-  </div>
+
+    <!-- Информация о перевозке -->
+    <div class="modal fade modalFormOrder" id="orderDirections3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-save="3">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="h5 modal-title" id="staticBackdropLabel">Выберите тип автомобиля</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="model-brand contact-style-1">
+                    <div class="mb-2">
+                        <input name="from" type="text" required="" class="form-control" placeholder="Откуда*">
+                        <span>Например, Москва</span>
+                    </div>
+                    <div class="mb-2">
+                        <input name="to" type="text" required="" class="form-control" placeholder="Куда*">
+                        <span>Например, Владивосток</span>
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" placeholder="Желаемая дата отправки*" id="datepicker" name="date" required>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-success" data-save="3">Сохранить</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Обратный звонок -->
+    <div class="modal fade callback" id="modalPhone" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="h5 modal-title" id="exampleModalLabel">Заказать обратный звонок</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input name="phone" type="phone" required="" class="form-control phoneContact" placeholder="Номер телефона" id="phone">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success btn" id="btnContactPhone">Заказать звонок</button>
+            </div>
+        </div>
+        </div>
+    </div>
 
 <!-- JavaScript  files ========================================= -->
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
