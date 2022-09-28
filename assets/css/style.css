@@ -2833,6 +2833,7 @@ ul {
   top: 0;
   height: 100%;
   width: 100%;
+
 }
 .banner-area .banner-social-media {
   position: absolute;
@@ -3433,6 +3434,7 @@ ul {
   background-repeat: no-repeat;
   position: relative;
   z-index: 0;
+  margin-top: 115px;
 }
 .testimonial-area:after {
   content: "";

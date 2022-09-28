@@ -116,15 +116,15 @@
         /*------------------------------------------------
             banner-slider
         ------------------------------------------------*/
-        $('.banner-slider').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: false,
-            dots: false,
-            smartSpeed: 1500,
-            items: 1,
-            navText: [leftArrow,rightArrow],
-        });
+        // $('.banner-slider').owlCarousel({
+        //     loop: false,
+        //     margin: 10,
+        //     nav: false,
+        //     dots: false,
+        //     smartSpeed: 1500,
+        //     items: 1,
+        //     navText: [leftArrow,rightArrow],
+        // });
 
         /*------------------------------------------------
             testimonial-slider
