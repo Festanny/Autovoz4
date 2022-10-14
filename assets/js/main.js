@@ -13,8 +13,8 @@
             infinite: false,
             draggable: false,
             appendArrows: $('.arrows-order'),
-            prevArrow: '<button type="button" class="btn_slide"><i class="fa-solid fa-angle-left"></i></button>',
-            nextArrow: '<button type="button" class="btn_slide"><i class="fa-solid fa-angle-right"></i></button>',
+            prevArrow: '<button type="button" class="btn_slide">Назад</button>',
+            nextArrow: '<button type="button" class="btn_slide">Далее</button>',
             responsive: [
             {
                 breakpoint: 768,
