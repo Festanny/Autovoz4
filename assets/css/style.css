@@ -133,7 +133,7 @@ ol li:before {
   margin-right: 10px;
 }
 
-path{ fill:inherit; stroke:inherit; }
+/* path{ fill:inherit; stroke:inherit; } */
 
 button:hover,
 button:active,
@@ -1108,6 +1108,15 @@ ul {
 
 .mg-top-120 {
   margin-top: 120px;
+}
+.mg-top-90 {
+  margin-top: 90px;
+}
+.mg-bottom-120 {
+  margin-bottom: 120px;
+}
+.mg-bottom-90 {
+  margin-bottom: 120px;
 }
 
 .pd-bottom-55 {
@@ -2550,26 +2559,26 @@ ul {
 .single-input-inner {
   margin-bottom: 20px;
 }
-.single-input-inner input {
+.single-input-inner input:not(.inputMain) {
   width: 100%;
   height: 52px;
   border: 0 !important;
   border-radius: 4px;
   padding: 0 18px;
 }
-.single-input-inner input::-webkit-input-placeholder {
+.single-input-inner input:not(.inputMain)::-webkit-input-placeholder {
   color: #bbbbbb;
 }
-.single-input-inner input::-moz-placeholder {
+.single-input-inner input:not(.inputMain)::-moz-placeholder {
   color: #bbbbbb;
 }
-.single-input-inner input:-ms-input-placeholder {
+.single-input-inner input:not(.inputMain):-ms-input-placeholder {
   color: #bbbbbb;
 }
-.single-input-inner input::-ms-input-placeholder {
+.single-input-inner input:not(.inputMain)::-ms-input-placeholder {
   color: #bbbbbb;
 }
-.single-input-inner input::placeholder {
+.single-input-inner input:not(.inputMain)::placeholder {
   color: #bbbbbb;
 }
 .single-input-inner textarea {
@@ -2787,7 +2796,7 @@ ul {
 .banner-inner {
   position: relative;
   z-index: 2;
-  padding: 155px 35px 195px 0;
+  padding: 155px 0 195px;
 }
 .banner-inner .sub-title-bg {
   background-image: url(../img/banner/subtitle-bg.png);
@@ -3307,7 +3316,7 @@ ul {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   border-radius: 5px;
-  padding: 0 25px 30px;
+  padding: 30px 25px;
   margin-bottom: 30px;
 }
 .single-intro-wrap .bg-border {
@@ -3449,6 +3458,7 @@ ul {
   position: relative;
   z-index: 0;
   margin-top: 115px;
+  margin-bottom: 200px;
 }
 .testimonial-area:after {
   content: "";
@@ -3700,12 +3710,14 @@ ul {
 .contact-form-wrap {
   padding: 75px 40px 75px 10px;
 }
-.contact-form-wrap .single-input-inner,
-.info-block-order .single-input-inner {
+.contact-form-wrap .single-input-inner {
   margin-bottom: 30px;
 }
+.info-block-order .single-input-inner {
+  margin-bottom: 15px;
+}
 .contact-form-wrap .single-input-inner input,
-.info-block-order .single-input-inner input {
+.info-block-order .single-input-inner input:not(.inputMain) {
   background: #F3F4F8;
   height: 45px;
   line-height: 45px;
@@ -4643,10 +4655,6 @@ ul {
   padding-right: 0;
   margin-right: 0;
 }
-.single-blog-inner:hover {
-  -webkit-box-shadow: 0px 20px 50px rgba(0, 8, 21, 0.05);
-          box-shadow: 0px 20px 50px rgba(0, 8, 21, 0.05);
-}
 .single-blog-inner:hover .thumb img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -5035,7 +5043,6 @@ ul {
 }
 .info-block-order .order-slider {
   margin-top: 30px;
-  padding: 0 30px;
 }
 .info-block-order .order-slider .h4 {
   font-size: 16px;
@@ -5050,15 +5057,15 @@ ul {
   font-weight: 700;
   font-size: 48px;
 }
-.order-slider .typeCarBlock {
+.info-block-order .typeCarBlock {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   gap: 10px;
 }
-.order-slider .typeCarBlock input[type="radio"] {
+.info-block-order .typeCarBlock input[type="radio"] {
   display: none;
 }
-.order-slider .typeCarBlock label {
+.info-block-order .typeCarBlock label {
   position: relative;
   display: flex;
   /* flex-direction: column; */
@@ -5068,8 +5075,8 @@ ul {
   font-weight: bold;
   cursor: pointer;
 }
-.order-slider .typeCarBlock label::before,
-.order-slider .typeCarBlock label::after {
+.info-block-order .typeCarBlock label::before,
+.info-block-order .typeCarBlock label::after {
   position: absolute;
   content: '';
   background-color: var(--main-color);
@@ -5078,35 +5085,35 @@ ul {
   transition: all .3s;
   opacity: 1;
 }
-.order-slider .typeCarBlock label::before {
+.info-block-order .typeCarBlock label::before {
   width: 40%;
   height: 3px;
 }
-.order-slider .typeCarBlock label::after {
+.info-block-order .typeCarBlock label::after {
   width: 3px;
   height: 40%;
 }
-.order-slider .typeCarBlock label:hover::before,
-.order-slider .typeCarBlock label:hover::after,
-.order-slider .typeCarBlock input:checked + label::before,
-.order-slider .typeCarBlock input:checked + label::after {
+.info-block-order .typeCarBlock label:hover::before,
+.info-block-order .typeCarBlock label:hover::after,
+.info-block-order .typeCarBlock input:checked + label::before,
+.info-block-order .typeCarBlock input:checked + label::after {
   background-color: green;
 }
-.order-slider .typeCarBlock label:hover::before,
-.order-slider .typeCarBlock input:checked + label::before {
+.info-block-order .typeCarBlock label:hover::before,
+.info-block-order .typeCarBlock input:checked + label::before {
   width: 70%;
 }
-.order-slider .typeCarBlock label:hover::after,
-.order-slider .typeCarBlock input:checked + label::after {
+.info-block-order .typeCarBlock label:hover::after,
+.info-block-order .typeCarBlock input:checked + label::after {
   height: 70%;
 }
-.order-slider .typeCarBlock img {
+.info-block-order .typeCarBlock img {
   width: 150px;
   height: 60px;
   object-fit: contain;
   margin: 0;
 }
-.order-slider .typeCarBlock label span {
+.info-block-order .typeCarBlock label span {
   text-transform: uppercase;
   margin-top: 10px;
   width: 100%;
@@ -5114,4 +5121,16 @@ ul {
 }
 .info-block-order .single-input-inner span {
   font-size: 12px;
+}
+.info-block-order .single-input-inner .checkbox-data {
+  display: flex;
+}
+.info-block-order .single-input-inner .checkbox-data label {
+  margin-left: 10px;
+}
+.info-block-order .order-slider .slick-slide {
+  padding: 0 30px;
+}
+.info-block-order .order-slider .desc {
+  font-size: 14px;
 }
