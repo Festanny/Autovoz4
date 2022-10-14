@@ -3,6 +3,28 @@
 
     $(document).ready(function () {
 
+        // второй слайдер
+        $('.order-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            swipe: false,
+            arrows: true,
+            infinite: false,
+            draggable: false,
+            appendArrows: $('.arrows-order'),
+            prevArrow: '<button type="button" class="btn_slide"><i class="fa-solid fa-angle-left"></i></button>',
+            nextArrow: '<button type="button" class="btn_slide"><i class="fa-solid fa-angle-right"></i></button>',
+            responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                slidesToShow: 1
+                }
+            }
+            ]
+        });
+
         /**-----------------------------
          *  Navbar fix
          * ---------------------------*/

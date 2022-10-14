@@ -133,6 +133,8 @@ ol li:before {
   margin-right: 10px;
 }
 
+path{ fill:inherit; stroke:inherit; }
+
 button:hover,
 button:active,
 button:focus {
@@ -1459,9 +1461,21 @@ ul {
   font-weight: 700;
   font-size: 24px;
   color: #fff;
+  width: 220px;
+  height: 170px;
+  position: relative;
+}
+.navbar-area .nav-container .logo svg {
+  fill: var(--main-color);
 }
 .navbar-area .nav-container .logo a img {
-  height: auto;
+  width: 100%;
+  height: calc(100% + 20px);
+  object-fit: contain;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .navbar-area .nav-container .navbar-collapse {
   padding-left: 220px;
@@ -4978,4 +4992,33 @@ ul {
 }
 .footer-bottom ul li:last-child {
   margin-right: 0;
+}
+
+.arrows-order {
+  display: flex;
+  gap: 5px;
+}
+.arrows-order .btn_slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--main-color);
+  background-color: transparent
+}
+.info-block-order .order-slider {
+  margin-top: 15px;
+}
+.info-block-order .order-slider .h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--heading-color);
+}
+.service-form-area .service-form-wrap .title.h2 {
+  margin-bottom: 20px;
+  color: var(--heading-color);
+  font-weight: 700;
+  font-size: 48px;
 }

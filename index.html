@@ -10,11 +10,16 @@
     <link rel=icon href="assets/img/favicon.jpg" sizes="20x20" type="image/png">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/vendor.css">
+    <?xml-stylesheet type="text/css" href="assets/css/style.css"?>
+    <!-- <link rel="stylesheet" href="assets/css/vendor.css"> -->
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/remixicon/remixicon.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+
+    <script src="https://kit.fontawesome.com/0396950dcd.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -62,7 +67,13 @@
                     </button>
                 </div>
                 <div class="logo">
-                    <a href="home.html"><img src="assets/img/logo-2.png" alt="img"></a>
+                    <a href="home.html">
+                        <svg width="170" height="220" viewBox="0 0 170 220" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="170" height="150"/>
+                            <path d="M85 220L170 150H0L85 220Z"/>
+                        </svg>                            
+                        <img src="assets/img/logo.png" alt="img">
+                    </a>
                 </div>
                 <div class="nav-left-part">
                       
@@ -163,20 +174,22 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="service-form-wrap">
-                        <h3>Рассчитать стоимость</h3>
+                        <div class="h2 title left-line">Рассчитать стоимость</div>
                         <form class="info-block-order">
-                            <div class="panel">
-                                <div class="choice" data-bs-toggle="modal" data-bs-target="#orderDirections1" data-save="1">
-                                    <div class="choice-text">
-                                        <i class="fa-solid fa-car text-30"></i>
-                                        <span>Выберите тип автомобиля</span>
-                                    </div>
-                                    <i class="fa-solid fa-chevron-right text-13 ml-10"></i>
+                            <div class="arrows-order"></div>
+                            <div class="order-slider">
+                                <div>
+                                    <div class="h4">Выберите тип транспорта (1/4)</div>
                                 </div>
-                            </div>
-                            <div class="info">
-                                <div class="block">Окно 1</div>
-                                <div class="block">Окно 2</div>
+                                <div>
+                                    <div class="h4">Марка и модель автомобиля (2/4)</div>
+                                </div>
+                                <div>
+                                    <div class="h4">Информация о перевозке (3/4)</div>
+                                </div>
+                                <div>
+                                    <div class="h4">Стоимость перевозки (4/4)</div>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -669,7 +682,9 @@
     </div>
 
     <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="assets/js/vendor.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
