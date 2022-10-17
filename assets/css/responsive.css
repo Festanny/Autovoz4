@@ -476,6 +476,9 @@
 	.banner-inner {
 		padding: 30px 0 90px 0;
 	}
+	.banner-inner.style-white .title {
+		font-size: 38px;
+	}
 }
 
 @media all and (max-width: 375px) {
@@ -486,10 +489,13 @@
 		margin-right: 0;
 	}
 	.banner-inner.style-white .title {
-		font-size: 34px;
+		font-size: 30px;
+	}
+	.banner-inner .content {
+		font-size: 14px;
 	}
 	.banner-inner {
-		padding: 110px 0 0 0;
+		padding: 0 0 80px 0;
 	}
 	.banner-inner .btn-wrap .btn {
 		margin: 0 0 20px 0!important;

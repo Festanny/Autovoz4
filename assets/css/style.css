@@ -5071,7 +5071,7 @@ input:not(.inputMain) {
 }
 .info-block-order .typeCarBlock {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(140px, auto));
   gap: 10px;
 }
 .info-block-order .typeCarBlock input[type="radio"] {
