@@ -715,7 +715,7 @@ ul {
   left: 0;
   top: 0;
   z-index: 999999999999;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #000;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -1541,7 +1541,7 @@ ul {
   content: "";
   position: absolute;
   right: -1px;
-  top: 25px;
+  top: 26px;
   height: 2px;
   width: 10px;
   background: var(--heading-color);
@@ -1871,13 +1871,13 @@ ul {
 /**************** nav-right-part *************/
 .nav-right-part .cart-btn,
 .nav-right-part .search-bar-btn {
-  border-right: 1px solid #9CA3AF;
   display: inline-block;
   text-align: center;
   color: #121212;
   font-size: 18px;
   padding-right: 14px;
   margin-right: 10px;
+  opacity: 0;
 }
 .nav-right-part .cart-btn i, .nav-right-part .cart-btn svg,
 .nav-right-part .search-bar-btn i,
@@ -2558,7 +2558,7 @@ ul {
   background: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
-  padding: 68px 265px;
+  /* padding: 68px 265px; */
 }
 
 /************ single-inpur-inner ************/
@@ -3256,6 +3256,7 @@ input:not(.inputMain) {
   opacity: 1;
 }
 .single-gallery-wrap .gallery-btn {
+  cursor: pointer;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   height: 100%;
@@ -5070,7 +5071,7 @@ input:not(.inputMain) {
 }
 .info-block-order .typeCarBlock {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
   gap: 10px;
 }
 .info-block-order .typeCarBlock input[type="radio"] {
@@ -5207,4 +5208,50 @@ input:not(.inputMain) {
 .info-block-order input.errorForm,
 .callback .phoneContact.errorForm {
   border-color: red!important;
+}
+.minimized {
+	cursor: pointer;
+}
+#magnify {
+	display: none;
+	position: fixed;
+	width: 70%;
+	max-height: 80vh;
+	z-index: 100001;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#magnify img {
+	width: 100%;
+  max-height: 80vh;
+	border-radius: 10px;
+  object-fit: cover;
+}
+#overlay {
+	display: none;
+	background: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.5;
+	z-index: 100000;
+}
+#close-popup {
+	padding: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+}
+#close-popup i {
+	width: 20px;
+	height: 20px;
+	background: url('../img/close.png') no-repeat center center;
+	background-size: 20px 20px;
+	display: block;
+	filter: invert(1);
 }

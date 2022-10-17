@@ -89,7 +89,8 @@
 		min-width: 50px;
 		font-size: 36px;
 	}
-	.section-title .title {
+	.section-title .title,
+	.service-form-area .service-form-wrap .title.h2 {
 		font-size: 40px;
 	}
 	.wcu-thumb-wrap .img-2 {
@@ -187,9 +188,6 @@
 	}
 }
 @media all and (max-width: 991px) {
-	.navbar-area .nav-container .logo a img {
-		width: 125px;
-	}
 	.navbar-top ul.topbar-left {
 		padding-left: 150px;
 	}
@@ -216,7 +214,7 @@
 		margin-right: 14px;
 	}
 	.banner-inner {
-		padding: 155px 0 0 0;
+		padding: 90px 0 0 0;
 	}
 	.banner-area-1 {
 		padding: 100px 0 0px 0;
@@ -331,14 +329,42 @@
 	.contact-form-wrap {
 		padding: 75px 40px 75px 40px;
 	}
-	.single-intro-wrap {
-		margin-top: 50px;
-	}
 	.pd-top-170 {
 		padding-top: 120px;
 	}
 	.banner-area-2 .banner-slider .owl-nav button {
 		transform: none;
+	}
+	.navbar-area .nav-container .logo svg {
+		width: 130px;
+		height: 100%;
+	}
+	.navbar-area .nav-container .logo a img {
+		width: calc(100% - 30px);
+	}
+	.navbar-area.sticky-active .nav-container .logo svg {
+		width: 110px;
+	}
+	.navbar-area.sticky-active .nav-container .logo a img {
+		top: 50%;
+	}
+	.info-block-order .typeCarBlock img {
+		width: 130px;
+		height: 50px;
+	}
+}
+@media all and (max-width: 767px) {
+	.navbar-top {
+		display: none;
+	}
+	.navbar-area .nav-container .logo svg {
+		width: 110px;
+	}
+	.navbar-area .nav-container .logo {
+		top: -30px;
+	}
+	.banner-inner {
+		padding: 30px 0 0 0;
 	}
 }
 @media all and (max-width: 576px) {
@@ -354,7 +380,8 @@
 	.td-search-popup.active .search-form {
 	    width: 90%;
 	}
-	.section-title .title {
+	.section-title .title,
+	.service-form-area .service-form-wrap .title.h2 {
 		font-size: 30px;
 		line-height: initial;
 	}
@@ -425,6 +452,32 @@
 		margin: 0 0 20px 0;
 	}
 }
+@media all and (max-width: 575px) {
+	.navbar-area .nav-container .logo svg,
+	.navbar-area.sticky-active .nav-container .logo svg {
+		width: 90px;
+	}
+	.navbar-area .nav-container .logo,
+	.navbar-area.sticky-active .nav-container .logo {
+		top: -17px;
+	}
+	.navbar-area .nav-container .logo a img,
+	.navbar-area.sticky-active .nav-container .logo a img {
+		width: calc(100% - 25px);
+	}
+	.navbar-area.sticky-active .nav-container .logo a img {
+		top: 25%;
+	}
+}
+@media all and (max-width: 479px) {
+	.banner-inner .btn-wrap {
+		display: none;
+	}
+	.banner-inner {
+		padding: 30px 0 90px 0;
+	}
+}
+
 @media all and (max-width: 375px) {
 	.navbar-area .nav-container .logo a img {
 	    max-width: 160px;

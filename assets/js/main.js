@@ -365,28 +365,28 @@
         /*------------------------------------------------
             Magnific JS
         ------------------------------------------------*/
-        $('.video-play-btn').magnificPopup({
-            type: 'iframe',
-            removalDelay: 260,
-            mainClass: 'mfp-zoom-in',
-        });
-        $.extend(true, $.magnificPopup.defaults, {
-            iframe: {
-                patterns: {
-                    youtube: {
-                        index: 'youtube.com/',
-                        id: 'v=',
-                        src: 'https://www.youtube.com/embed/Wimkqo8gDZ0'
-                    }
-                }
-            }
-        });
+        // $('.video-play-btn').magnificPopup({
+        //     type: 'iframe',
+        //     removalDelay: 260,
+        //     mainClass: 'mfp-zoom-in',
+        // });
+        // $.extend(true, $.magnificPopup.defaults, {
+        //     iframe: {
+        //         patterns: {
+        //             youtube: {
+        //                 index: 'youtube.com/',
+        //                 id: 'v=',
+        //                 src: 'https://www.youtube.com/embed/Wimkqo8gDZ0'
+        //             }
+        //         }
+        //     }
+        // });
 
-        $('.gallery-btn').magnificPopup({
-            type: 'iframe',
-            removalDelay: 260,
-            mainClass: 'mfp-zoom-in',
-        });
+        // $('.gallery-btn').magnificPopup({
+        //     type: 'iframe',
+        //     removalDelay: 260,
+        //     mainClass: 'mfp-zoom-in',
+        // });
 
         /* -----------------------------------------
             fact counter
@@ -458,7 +458,7 @@
     new WOW().init();
 
     function getting_data() {
-        var fixed_offset = $('#tt-stuck').height() + 45,
+        var fixed_offset = $('.navbar').height() + 100,
             car = $('.info-block-order .order-slider input[name="car"]:checked'),
             brand = $('.info-block-order .order-slider input[name="brand"]'),
             model = $('.info-block-order .order-slider input[name="model"]'),
@@ -468,13 +468,15 @@
             nameForm = $('.info-block-order .order-slider input[name="name"]'),
             phoneForm = $('.info-block-order .order-slider input[name="phone"]'),
             checkPeople = $('.info-block-order .order-slider .checkbox-data input[type="checkbox"]').is(':checked'),
-            objData = {car, brand, model, fromCity, toCity, date, nameForm, phoneForm, checkPeople}
+            objData = {car, brand, model, fromCity, toCity, date, nameForm, phoneForm, checkPeople, fixed_offset}
         return objData;
     }
 
     // клик на кнопку Далее
     $('.info-block-order .arrows-order').on('click', function() {
         var objData = getting_data();
+        console.log(objData.fixed_offset)
+        $('html, body').animate({scrollTop: $('.info-block-order').offset().top - objData.fixed_offset}, 1000);
 
         if (objData.car!== undefined&&objData.fromCity.val()!=''&&objData.toCity.val()!=''&&objData.date.val()!='') {
             $('.info-block-order .infoBlockOrderLast .info-block-main.d-none').removeClass('d-none')
@@ -555,6 +557,23 @@
     //         }
     //     });
     // }
+
+    // Просмотр изображения
+	$(function(){
+		$('.single-gallery-wrap .gallery-btn').click(function(event) {
+            // $(event.target).prev()[0];
+		var i_path = $(event.target).prev().attr('src');
+		$('body').append('<div id="overlay"></div><div id="magnify"><img src="'+i_path+'"><div id="close-popup"><i></i></div></div>');
+		$('#overlay, #magnify').fadeIn('fast');
+		});
+		
+		$('body').on('click', '#close-popup, #overlay', function(event) {
+		event.preventDefault();
+		$('#overlay, #magnify').fadeOut('fast', function() {
+			$('#close-popup, #magnify, #overlay').remove();
+		});
+		});
+	});
 
     // mask for phone
     window.addEventListener("DOMContentLoaded", function() {
