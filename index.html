@@ -69,10 +69,10 @@
                 </div>
                 <div class="logo">
                     <a href="home.html">
-                        <svg width="170" height="220" viewBox="0 0 170 220" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="170" height="150"/>
-                            <path d="M85 220L170 150H0L85 220Z"/>
-                        </svg>                            
+                        <svg width="171" height="219" viewBox="0 0 171 219" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1.52588e-05" width="170" height="150" />
+                            <path d="M85 219L170.005 150L170 149H0.0374756H0V150L85 219Z" />
+                        </svg>
                         <img src="assets/img/logo.png" alt="img">
                     </a>
                 </div>
@@ -260,14 +260,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="finish_order">
                                     <div class="h4">Стоимость перевозки (4/4)</div>
                                     <div class="block">
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <p class="manager">Наши менеджеры рассчитывают стоимость перевозки автомобиля по Вашей заявке!</p>
                                                 <div class="infoBlockOrderLast">
-                                                    <div class="info-block-main mb-3">
+                                                    <div class="info-block-main mb-3 d-none">
                                                         <span><b>Вы хотите перевезти:</b></span>
                                                         <div class="info">
                                                             <span>Информация</span>
@@ -294,8 +294,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-12">
-                                                <button class="btn btn-base">Узнать стоимость</button>
+                                            <div class="col-12 sendForm">
+                                                <button type="button" class="btn btn-base">Узнать стоимость</button>
                                             </div>
                                             <div class="col-12 mt-3">
                                                 <p class="desc">* В течение 5 минут с Вами свяжется наш специалист и проинформирует вас о стоимости перевозки, а также ответит на все интересующие Вас вопросы.</p>
@@ -419,10 +419,15 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center grid">
+                <!-- <div class="grid">
+                    <img src="assets/img/gallery/banner.png" alt="img" class="grid-item">
+                    <img src="assets/img/gallery/banner.png" alt="img" class="grid-item">
+                    <img src="assets/img/gallery/banner.png" alt="img" class="grid-item">
+                </div> -->
                 <div class="col-lg-4 col-md-6">
                     <div class="single-gallery-wrap">
-                        <img src="assets/img/gallery/1.png" alt="img">
+                        <img src="assets/img/gallery/banner.png" alt="img">
                         <a class="gallery-btn" href="assets/img/gallery/1.png" data-effect="mfp-zoom-in"><span><i class="ri-zoom-in-line"></i></span></a>
                     </div>
                 </div>
@@ -635,7 +640,7 @@
                 <div class="tabs-formOrder">
                     <div class="tt-form-default">
                         <!-- <input type="text" name="phone" value="" id="phone" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control phoneContact" aria-required="true" aria-invalid="false" placeholder="Номер телефона"> -->
-                        <input type="text" name="phone" id="phone" placeholder="Номер телефона">
+                        <input type="text" name="phone" id="phone" placeholder="Номер телефона" class="phoneContact">
                     </div>
                 </div>
                 

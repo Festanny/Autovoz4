@@ -328,9 +328,6 @@
 	.shop-item-details {
 		margin-top: 30px;
 	}
-	.contact-inner {
-		margin-top: -40%;
-	}
 	.contact-form-wrap {
 		padding: 75px 40px 75px 40px;
 	}
@@ -427,9 +424,6 @@
 	.shop-tabs .comment-area .media .media-left {
 		margin: 0 0 20px 0;
 	}
-	.contact-inner {
-		margin-top: -70%;
-	}
 }
 @media all and (max-width: 375px) {
 	.navbar-area .nav-container .logo a img {
@@ -458,9 +452,6 @@
 		margin-left: 0;
 		margin-top: 47px;
 		margin-right: 5px;
-	}
-	.contact-inner {
-		margin-top: -85%;
 	}
 	.contact-form-wrap {
 		padding: 55px 20px;

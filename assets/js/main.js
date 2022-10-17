@@ -14,7 +14,7 @@
             draggable: false,
             appendArrows: $('.arrows-order'),
             prevArrow: '<button type="button" class="btn_slide">Назад</button>',
-            nextArrow: '<button type="button" class="btn_slide">Далее</button>',
+            nextArrow: '<button type="button" class="btn_slide btn_slide_next">Далее</button>',
             responsive: [
             {
                 breakpoint: 768,
@@ -456,6 +456,105 @@
 
     });
     new WOW().init();
+
+    function getting_data() {
+        var fixed_offset = $('#tt-stuck').height() + 45,
+            car = $('.info-block-order .order-slider input[name="car"]:checked'),
+            brand = $('.info-block-order .order-slider input[name="brand"]'),
+            model = $('.info-block-order .order-slider input[name="model"]'),
+            fromCity = $('.info-block-order .order-slider input[name="from"]'),
+            toCity = $('.info-block-order .order-slider input[name="to"]'),
+            date = $('.info-block-order .order-slider input[name="date"]'),
+            nameForm = $('.info-block-order .order-slider input[name="name"]'),
+            phoneForm = $('.info-block-order .order-slider input[name="phone"]'),
+            checkPeople = $('.info-block-order .order-slider .checkbox-data input[type="checkbox"]').is(':checked'),
+            objData = {car, brand, model, fromCity, toCity, date, nameForm, phoneForm, checkPeople}
+        return objData;
+    }
+
+    // клик на кнопку Далее
+    $('.info-block-order .arrows-order').on('click', function() {
+        var objData = getting_data();
+
+        if (objData.car!== undefined&&objData.fromCity.val()!=''&&objData.toCity.val()!=''&&objData.date.val()!='') {
+            $('.info-block-order .infoBlockOrderLast .info-block-main.d-none').removeClass('d-none')
+            $('.info-block-order .infoBlockOrderLast .info-block-main .info span').html(`${objData.car.val()} ${objData.brand.val()} ${objData.model.val()} из г.${objData.fromCity.val()} в г.${objData.toCity.val()}. Желаемая дата отправки: ${objData.date.val()}`);
+        } else {
+            $('.info-block-order .infoBlockOrderLast .info-block-main').addClass('d-none')
+        }
+    });
+
+
+    $('.info-block-order .order-slider .finish_order .sendForm button').on('click', function() {
+        var objData = getting_data();
+        
+        objData.nameForm.val() == '' ? addError(objData.nameForm) : removeError(objData.nameForm)
+        objData.phoneForm.val() == '' || objData.phoneForm.val().length != 17 ? addError(objData.phoneForm) : removeError(objData.phoneForm)
+        if (objData.checkPeople === false) alert('Нет согласия на обработку персональных данных') 
+
+        if (objData.nameForm.val()!='' && objData.phoneForm.val()!='' && objData.phoneForm.val().length==17 && objData.checkPeople===true) {
+            var objContact = new Object()
+            objContact = {
+                data: {
+                    'date': objData.date.val(),
+                    'email': objData.nameForm.val(),
+                    'from': objData.fromCity.val(),
+                    'phone': objData.phoneForm.val(),
+                    'to': objData.toCity.val(),
+                    'transport_desc': objData.brand.val() + ' ' + objData.model.val(),
+                    'transport_kind': objData.car.val()
+                },
+                "form_kind": "main"
+            }
+            // sendAjaxRequestModal(objContact);
+            console.log('Отправлено')
+        }
+    })
+    function addError(el) {
+        el.addClass('errorForm');
+    }
+    function removeError(el) {
+        el.removeClass('errorForm');
+    }
+
+    // проверки полей обратного звонка
+    $(".callback #btnContactPhone").click(() => {
+        if ($('.callback .phoneContact').val() == '' || $('.callback .phoneContact').val().length != 17) {
+            $('.callback .phoneContact').addClass('errorForm');
+            alert('Номер телефона не заполнен, либо заполнен неверно')
+        } else {
+            var objContact = {
+                data: {
+                    'phone': $('.phoneContact').val()
+                },
+                "form_kind": "navbar"
+            }
+            $('.callback .phoneContact').removeClass('errorForm');
+            // sendAjaxRequestModal(objContact);
+            alert('Отправлено')
+        }
+        return false;
+    });
+    
+    // ajax формы
+    // var csrfToken = $('[name=csrf_token]').val()
+    // function sendAjaxRequestModal(objContact) {
+    //     $.ajax({
+    //         url: '/make_order/',
+    //         type: 'POST',
+    //         contentType: false,
+    //         processData: false,
+    //         data: JSON.stringify(objContact),
+    //         dataType: 'json',
+    //         headers: {
+    //             "Content-Type": "application/json",
+    //             "X-CSRFToken": csrfToken
+    //         },
+    //         success: () => {
+    //             window.location.replace("/order_success");
+    //         }
+    //     });
+    // }
 
     // mask for phone
     window.addEventListener("DOMContentLoaded", function() {

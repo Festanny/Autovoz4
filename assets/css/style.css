@@ -121,17 +121,17 @@ ol {
   padding-left: 0;
 }
 
-ol li {
+/* ol li {
   list-style: none;
   margin-bottom: 1rem;
-}
+} */
 
-ol li:before {
+/* ol li:before {
   counter-increment: counter;
   content: counter(counter);
   font-weight: 500;
   margin-right: 10px;
-}
+} */
 
 /* path{ fill:inherit; stroke:inherit; } */
 
@@ -1487,7 +1487,7 @@ ul {
   object-fit: contain;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: calc(50% - 10px);
   transform: translate(-50%, -50%);
 }
 .navbar-area .nav-container .navbar-collapse {
@@ -2566,10 +2566,10 @@ ul {
   margin-bottom: 20px;
 }
 .single-input-inner input:not(.inputMain),
-.modal input:not(.inputMain) {
+input:not(.inputMain) {
   width: 100%;
   height: 52px;
-  border: 0 !important;
+  /* border: 0 !important; */
   border-radius: 4px;
   padding: 0 18px;
 }
@@ -2969,7 +2969,7 @@ ul {
 
 .service-form-wrap {
   background: #fff;
-  padding: 20px 20px 30px;
+  padding: 30px;
   -webkit-transform: translateY(-75px);
           transform: translateY(-75px);
   -webkit-box-shadow: 0px 2px 5px rgba(0, 6, 18, 0.1);
@@ -3702,7 +3702,6 @@ ul {
   background: #fff;
   -webkit-box-shadow: 0px 10px 50px rgba(0, 6, 18, 0.08);
           box-shadow: 0px 10px 50px rgba(0, 6, 18, 0.08);
-  margin-top: -23%;
 }
 
 .contact-form-inner {
@@ -3713,7 +3712,7 @@ ul {
   background-position: center;
 }
 .contact-form-inner:after {
-  border-radius: 0px 0 100px 0;
+  /* border-radius: 0px 0 100px 0; */
 }
 
 .contact-form-wrap {
@@ -3727,10 +3726,12 @@ ul {
 }
 .contact-form-wrap .single-input-inner input,
 .info-block-order .single-input-inner input:not(.inputMain),
-.modal input:not(.inputMain) {
+input:not(.inputMain) {
   background: #F3F4F8;
-  height: 45px;
+  height: 50px;
   line-height: 45px;
+  border: 1px solid transparent;
+  transition: all .3s;
 }
 .contact-form-wrap .single-input-inner input::-webkit-input-placeholder,
 .info-block-order .single-input-inner input::-webkit-input-placeholder {
@@ -5143,7 +5144,67 @@ ul {
 }
 .info-block-order .order-slider .desc {
   font-size: 14px;
+  margin-bottom: 0;
 }
 .red {
   color: var(--main-color)!important;
+}
+.single-contact-info .thumb i {
+  font-size: 25px;
+}
+.sticky-active svg {
+  width: 100px;
+  height: 190px;
+}
+.navbar-area.sticky-active .nav-container .logo a img {
+  height: 100%;
+}
+.other-page .single-contact-info .details h3 {
+  color: var(--heading-color);
+}
+.other-page .single-contact-info .details h3 {
+  color: var(--heading-color);
+}
+.other-page .single-contact-info .details p {
+  color: var(--paragraph-color);
+}
+.other-page .service-form-area .btn {
+  width: 100%;
+  justify-content: center;
+}
+.textPadding {
+  padding: 40px;
+}
+.textPadding a {
+  color: var(--main-color-2);
+  transition: all .3s;
+}
+.textPadding a:hover {
+  color: var(--main-color);
+}
+.other-page ol,
+.other-page ul {
+  padding-left: 36px;
+}
+.about-area .about-thumb-wrap img {
+  object-fit: cover;
+}
+.about-area .about-thumb-wrap .img-1 {
+  width: 200px;
+  height: 260px;
+}
+.about-area .about-thumb-wrap .img-2 {
+  width: 300px;
+  height: 400px;
+}
+.about-area .about-thumb-wrap .img-3 {
+  width: 240px;
+  height: 300px;
+}
+.d-none {
+  display: none!important;
+}
+.info-block-order input.errorForm,
+.callback .phoneContact.errorForm {
+  border-color: red!important;
 }
