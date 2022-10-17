@@ -5071,7 +5071,7 @@ input:not(.inputMain) {
 }
 .info-block-order .typeCarBlock {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   gap: 10px;
 }
 .info-block-order .typeCarBlock input[type="radio"] {
@@ -5257,4 +5257,37 @@ input:not(.inputMain) {
 	background-size: 20px 20px;
 	display: block;
 	filter: invert(1);
+}
+.info-dr {
+  padding: 0 40px 40px 40px;
+}
+table thead tr th:last-of-type,
+table tbody tr td:last-of-type {
+  text-align: right;
+}
+.service-block .single-service-inner .details p {
+  color: var(--paragraph-color);
+}
+.service-block .single-service-inner .details .btn-arrow {
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+.service-block .single-service-inner .details .btn-arrow:hover i {
+  color: #fff;
+}
+.service-block .single-service-inner {
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.accordion-body {
+  padding: 16px 20px 16px 40px;
+  color: var(--paragraph-color);
+}
+.card-header {
+  font-weight: bold;
+  font-size: 18px;
+}
+.textPadding .btn-base {
+  color: #fff;
 }

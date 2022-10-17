@@ -370,6 +370,9 @@
 	.banner-inner {
 		padding: 30px 0 0 0;
 	}
+  .info-block-order .typeCarBlock {
+		grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+	}
 }
 @media all and (max-width: 576px) {
 	.toggle-btn{
