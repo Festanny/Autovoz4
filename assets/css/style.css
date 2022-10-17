@@ -5123,7 +5123,9 @@ input:not(.inputMain) {
   width: 150px;
   height: 60px;
   object-fit: contain;
+  object-position: left;
   margin: 0;
+  transition: all .3s;
 }
 .info-block-order .typeCarBlock label span {
   text-transform: uppercase;
@@ -5139,6 +5141,7 @@ input:not(.inputMain) {
 }
 .info-block-order .single-input-inner .checkbox-data label {
   margin-left: 10px;
+  flex: 1;
 }
 .info-block-order .order-slider .slick-slide {
   padding: 0 30px;
